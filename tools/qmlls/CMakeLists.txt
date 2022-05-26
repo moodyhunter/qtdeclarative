@@ -18,6 +18,7 @@ qt_internal_add_app(qmlls
         qmllintsuggestions.h qmllintsuggestions.cpp
         textsynchronization.cpp textsynchronization.h
         qmlcompletionsupport.h qmlcompletionsupport.cpp
+        qmlhighlightsupport.h qmlhighlightsupport.cpp
         qqmlcodemodel.h qqmlcodemodel.cpp
         ../shared/qqmltoolingsettings.h
         ../shared/qqmltoolingsettings.cpp

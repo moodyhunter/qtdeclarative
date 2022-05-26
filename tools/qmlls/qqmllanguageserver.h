@@ -9,6 +9,7 @@
 #include "qmllintsuggestions.h"
 #include "workspace.h"
 #include "qmlcompletionsupport.h"
+#include "qmlhighlightsupport.h"
 #include "../shared/qqmltoolingsettings.h"
 
 QT_BEGIN_NAMESPACE
@@ -58,6 +59,7 @@ private:
     QmlLintSuggestions m_lint;
     WorkspaceHandlers m_workspace;
     QmlCompletionSupport m_completionSupport;
+    QmlHighlightSupport m_highlightSupport;
     int m_returnValue = 1;
 };
 
