@@ -4,6 +4,7 @@
 #define QQMLLANGUAGESERVER_H
 
 #include "qlanguageserver_p.h"
+#include "qmldocumentsymbolssupport.h"
 #include "qqmlcodemodel.h"
 #include "textsynchronization.h"
 #include "qmllintsuggestions.h"
@@ -58,6 +59,7 @@ private:
     QmlLintSuggestions m_lint;
     WorkspaceHandlers m_workspace;
     QmlCompletionSupport m_completionSupport;
+    QmlDocumentSymbolsSupport m_documentSymbolsSupport;
     int m_returnValue = 1;
 };
 

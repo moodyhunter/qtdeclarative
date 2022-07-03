@@ -47,13 +47,15 @@ QQmlLanguageServer::QQmlLanguageServer(std::function<void(const QByteArray &)> s
       m_textSynchronization(&m_codeModel),
       m_lint(&m_server, &m_codeModel),
       m_workspace(&m_codeModel),
-      m_completionSupport(&m_codeModel)
+      m_completionSupport(&m_codeModel),
+      m_documentSymbolsSupport(&m_codeModel)
 {
     m_server.addServerModule(this);
     m_server.addServerModule(&m_textSynchronization);
     m_server.addServerModule(&m_lint);
     m_server.addServerModule(&m_workspace);
     m_server.addServerModule(&m_completionSupport);
+    m_server.addServerModule(&m_documentSymbolsSupport);
     m_server.finishSetup();
     qCWarning(lspServerLog) << "Did Setup";
 }
